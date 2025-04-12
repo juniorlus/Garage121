@@ -1,4 +1,41 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Lilita+One&family=Titan+One&display=swap');
+
+/*  Tipo de Fontes
+
+Lilita One:
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+Titan One:
+.titan-one-regular {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+Chango:
+.chango-regular {
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ */
+
+ :root {
+
+  --fonte-padrao:"Lilita One"sans-serif;
+  --fonte-titulo:"Titan One" sans-serif;
+  --fonte-nave: "Chango" sans-serif;
+
+ }
+
 /* Cores para todo o site 
+
 
 Global Color */
 :root {
@@ -30,6 +67,17 @@ Global Color */
 body {
   color: var(--default-color);
   background-color: var(--background-color);
+  font-family: var(--fonte-padrao);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titulo);
 }
 
 a {
@@ -73,6 +121,7 @@ a:hover {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 
@@ -490,3 +539,96 @@ section,
     transform: translate3d(0, 0, 0);
   }
 }
+
+/* Sobre */
+
+.about .content h3 {
+  font-size: 2rem; /* 16px = 1rem */
+  font-weight: 700;
+
+
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+  .about .content ul li{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+
+  .about .content ul i {
+    flex-shrink: 0;
+    font-size: 48px;
+    color: var(--accent-color);
+    margin-right: 20px;
+    line-height: 0;
+  }
+
+  .about .content ul h5 {
+    font-size: 18px;
+    font-weight: 700; /* color para colocar cor */
+  }
+
+  .about .content ul p {
+    font-size: 15px;
+
+  }
+
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Play video */
+  .pulsating-play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+    display: block;
+    position: relative;
+    overflow: ;
+    border-radius: 50%;
+  }
+  
+  
+  
+  /* radial-gradient(...)	Cria um gradiente circular (do centro pra fora) 
+  
+  var(--accent-color) 50%	A cor sólida ocupa os primeiros 50% do raio
+  color-mix(in srgb, var(--accent-color), transparent 75%) 52%	A partir de 52%, começa a mistura da cor com 75% de transparência
+  in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível com navegadores) */
+
+  .pulsating-play-btn::before {
+   content:"";
+   position: absolute;
+   width: 120px;
+   height: 120px;
+   animation-delay: 0s;
+   animation: pulsating-play-btn 2s;
+   animation-direction: forwards;
+   animation-iteration-count: infinite;
+   animation-timing-function: steps;
+   opacity: 1;
+   border-radius: 50%;
+   border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+   background: rgba(198, 16, 0, 0);
+   top: -15%;
+   left: -15%;
+  }
+
+  .about .pulsating-play-btn {
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc( 50% - 47px);
+  }
+
+  @keyframes pulsating-play-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+    
+  }
