@@ -632,3 +632,16 @@ section,
     }
     
   }
+
+
+
+
+
+
+
+  /* services */
+  .services .service-item {
+    position: relative;
+    height: 100%;
+    margin-bottom: 30px;
+  }
