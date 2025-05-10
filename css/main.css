@@ -695,17 +695,15 @@ section,
 
   }
 
-  .service .service-item .icon i {
+  .services .service-item .icon i {
     color: var(--accent-color);
     font-size: 40px;
     line-height: 0;
     transition: 0.3s;
   }
 
-  .services .service-item:hover .icon i {
-    color: yellow;
-    transition: all .2s ease-in;
-  }
+  
+  
 
   /* h4 */
   .services .service-item .title {
@@ -721,6 +719,27 @@ section,
     color: #060606;
     margin-bottom: 10px;
   }
+
+  .services .service-item .readmore {
+    display: flex;
+    align-items: center;
+    color: #94949479;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+    /* Seta do leia mais - espaçamento   */
+  .services .service-item .readmore i {
+    margin-left: 8px;
+  }
+  
+   .services .service-item:hover .title,
+   .services .service-item:hover .readmore,
+   .services .service-item:hover .icon i {
+    color: yellow;
+    transition: all .2s ease-in;
+   }
 
 
 
