@@ -761,7 +761,7 @@ section,
    }
 
    .call-to-action::before {
-    content: ;
+    content: "";
     background:  rgba(255, 255, 0, 0);
     position: absolute;
     inset: 0;
@@ -889,6 +889,23 @@ section,
 
    .portfolio .portfolio-content:hover .portfolio-info {
     opacity: 1;
+   }
+
+   /* FeedBack 1 */
+   .feedbacks .feedback-item {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    position: relative;
+    height: 100%;
+   }
+
+   .feedbacks .feedback-item .feedback-img {
+    width: 90px;
+    border-radius: 50px;
+    border: 6px solid #fafafa;
+    float: left;
+    margin: 0 10px 0 0;
    }
 
 
