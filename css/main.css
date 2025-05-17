@@ -760,6 +760,57 @@ section,
     z-index: 1;
    }
 
+   .call-to-action::before {
+    content: ;
+    background:  rgba(255, 255, 0, 0);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+   }
+
+   .call-to-action .container {
+    position: relative;
+    z-index: 3;
+   }
+
+   .call-to-action h3 {
+    font-weight: 800;
+    text-shadow: 2px 2px 10px #060606;
+    font-size: 30px;
+
+   }
+
+   .call-to-action p {
+    font-size: 20px;
+    margin-top: 45px;
+    text-shadow: 2px 2px 10px #060606;
+
+   }
+
+   .call-to-action .cta-btn {
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 2px solid yellow;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 5px;
+    transition: .1s;
+    margin: 10px;
+    text-shadow: 2px 2px 10px #060606;
+    
+
+
+
+   }
+
+
+   .call-to-action .cta-btn:hover {
+    background: #07d607;
+   }
+
    /* Portfolio // Galeria */
    .portfolio .portfolio-filters {
     padding: 0;
