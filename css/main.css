@@ -809,7 +809,10 @@ section,
     transition: all .3s ease-in-out;
     background: #0606063e;
     padding: 15px;
+    opacity: 0;
    }
+
+
 
    .portfolio .portfolio-content:hover img {
     transform: scale(1.1);
@@ -831,6 +834,10 @@ section,
     left: 50%;
     font-size: 34px;
     line-height: 0;
+   }
+
+   .portfolio .portfolio-content:hover .portfolio-info {
+    opacity: 1;
    }
 
 
