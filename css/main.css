@@ -371,6 +371,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
+  scroll-margin-top: 40px;
 }
 
 @media ( max-width: 1199px) {
@@ -633,7 +634,7 @@ section,
     background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
     display: block;
     position: relative;
-    overflow: ;
+    overflow: hidden;
     border-radius: 50%;
   }
   
@@ -785,7 +786,7 @@ section,
     font-weight: 600;
    }
 
-   @media (max-width 575px) {
+   @media (max-width: 575px) {
     .portfolio .portfolio-filters li {
       font-size: 14px;
       margin: 0 5px;
@@ -815,7 +816,7 @@ section,
    }
 
    .portfolio .portfolio-content .portfolio-info .preview-link,
-   .portfolio .portfolio-content .portfolio-inf .details-link {
+   .portfolio .portfolio-content .portfolio-info .details-link {
     position: absolute;
     font-size: 26px;
     color: #fff;
@@ -826,7 +827,7 @@ section,
     
    }
 
-   .portfolio .portfolio-content .portfolio-inf .details-link {
+   .portfolio .portfolio-content .portfolio-info .details-link {
     left: 50%;
     font-size: 34px;
     line-height: 0;
